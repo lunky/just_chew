@@ -1,3 +1,14 @@
 footer.main.bg-faded
-  .navbar
-    .copy = fa_icon('copyleft', text: '2016')
+  #social-media 
+    .navbar.nav-inline
+        = link_to "https://twitter.com", class: 'nav-link'
+            = fa_icon('twitter 2x')
+        |
+        = link_to "https://facebook.com", class: 'nav-link'
+            = fa_icon('facebook 2x')
+        |
+        = link_to "https://plus.google.com", class: 'nav-link'
+            = fa_icon('google-plus 2x')
+  #copyleft
+    .navbar.nav-inline
+      .copy = fa_icon('copyleft', text: '2017')
