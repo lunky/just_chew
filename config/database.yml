@@ -7,8 +7,8 @@ default: &default
 
 vagrant: &vagrant
   username: postgres
-  password:
-  port: 5433
+  password: password
+  port: 5432
 
 docker: &docker
   username: postgres
