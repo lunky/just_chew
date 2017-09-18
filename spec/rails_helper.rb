@@ -41,6 +41,10 @@ Dir[Rails.root.join('spec/support/steps/spec_*.rb')].sort.each      { |f| requir
 Dir[Rails.root.join('spec/support/steps/**/*.rb')].sort.each        { |f| require f }
 Dir[Rails.root.join('spec/support/matchers/**/*.rb')].sort.each     { |f| require f }
 Dir[Rails.root.join('spec/support/*.rb')].sort.each                 { |f| require f }
+Dir[Rails.root.join('spec/support/pages/**/*.rb')].sort.each   { |f| require f }
+Dir[Rails.root.join('spec/support/steps/**/*.rb')].sort.each   { |f| require f }
+Dir[Rails.root.join('spec/support/helpers/**/*.rb')].sort.each { |f| require f }
+Dir[Rails.root.join('spec/support/*.rb')].each            { |f| require f }
 
 # Checks for pending migration and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
