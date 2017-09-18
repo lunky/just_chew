@@ -1,8 +1,7 @@
 class RestaurantsController < OrderingController
   before_action :load_restaurants
 
-  def index
-  end
+  def index; end
 
   private
   def load_restaurants
